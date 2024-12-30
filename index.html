@@ -1,164 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verdantic - Building a Sustainable Future</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verdantic | Verified Climate Action</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">Verdantic</h1>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Solutions</a></li>
-                <li><a href="#case-studies">Case Studies</a></li>
-                <li><a href="#impact">Impact</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-brand">Verdantic</div>
+    <ul class="navbar-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Building a Sustainable Future</h1>
-            <p>Partner with us to deliver measurable climate action through innovation and equity.</p>
-            <a href="#features" class="btn">Our Solutions</a>
-            <a href="#contact" class="btn secondary">Get Involved</a>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <header id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Verdantic: Verified Climate Action</h1>
+      <p>Empowering sustainable initiatives through transparency and impact.</p>
+      <a href="#projects" class="cta-button">Explore Projects</a>
+    </div>
+    <div id="hero-animation"></div>
+  </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Verdantic</h2>
-            <p>
-                Verdantic is committed to creating a decentralized and transparent carbon offset market. Our mission is to empower underserved communities, verify carbon credits, and contribute to achieving global climate goals, including the UN’s Sustainable Development Goals (SDGs).
-            </p>
-            <div class="values-grid">
-                <div class="value-card">
-                    <h3>Transparency</h3>
-                    <p>Blockchain-backed verification ensures trust and accountability.</p>
-                </div>
-                <div class="value-card">
-                    <h3>Equity</h3>
-                    <p>Supporting rural communities to promote inclusivity.</p>
-                </div>
-                <div class="value-card">
-                    <h3>Sustainability</h3>
-                    <p>Aligning with the UN SDGs to tackle climate change effectively.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Main Sections -->
+  <section id="projects" class="section">
+    <h2>Our Projects</h2>
+    <p>Discover the global initiatives we support to restore ecosystems and mitigate climate change.</p>
+    <div class="project-slider">
+      <div class="slide">Project 1</div>
+      <div class="slide">Project 2</div>
+      <div class="slide">Project 3</div>
+    </div>
+  </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2>Our Solutions</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>Carbon Credit Verification</h3>
-                    <p>We ensure all credits meet rigorous standards for quality and transparency.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Reforestation Programs</h3>
-                    <p>Collaborate with us to plant trees and restore ecosystems worldwide.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Project Dashboards</h3>
-                    <p>Track your sustainability projects with real-time analytics and updates.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Analytics & Insights</h3>
-                    <p>Use actionable insights to maximize your environmental impact.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="impact" class="section">
+    <h2>Impact Metrics</h2>
+    <div id="impact-animation"></div>
+  </section>
 
-    <!-- Case Studies Section -->
-    <section id="case-studies" class="case-studies">
-        <div class="container">
-            <h2>Case Studies</h2>
-            <div class="case-grid">
-                <div class="case-card">
-                    <h3>Reforesting Kenya</h3>
-                    <p>How Verdantic helped restore 5,000 hectares of forest in rural Kenya.</p>
-                </div>
-                <div class="case-card">
-                    <h3>Empowering Small Businesses</h3>
-                    <p>Providing carbon offset tools for small-scale developers in Ghana.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="testimonials" class="section">
+    <h2>What Our Partners Say</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial">
+        <p>"Verdantic helped us achieve measurable climate impact. Their transparency is unmatched."</p>
+      </div>
+      <div class="testimonial">
+        <p>"Partnering with Verdantic has been transformational for our sustainability goals."</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>What Our Partners Say</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <p>“Verdantic transformed our sustainability efforts. Their transparency and blockchain solutions are unparalleled.”</p>
-                    <h4>- Alex, CEO of GreenTech</h4>
-                </div>
-                <div class="testimonial-card">
-                    <p>“Partnering with Verdantic allowed us to reach new heights in reforestation projects. Truly visionary!”</p>
-                    <h4>- Maria, Founder of EcoEarth</h4>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Verdantic. All rights reserved.</p>
+  </footer>
 
-    <!-- Impact Metrics Section -->
-    <section id="impact" class="impact">
-        <div class="container">
-            <h2>Our Impact</h2>
-            <div class="impact-grid">
-                <div class="impact-card">
-                    <h3>1.5M+</h3>
-                    <p>Carbon Credits Verified</p>
-                </div>
-                <div class="impact-card">
-                    <h3>15,000+</h3>
-                    <p>Hectares Restored</p>
-                </div>
-                <div class="impact-card">
-                    <h3>1,000+</h3>
-                    <p>Communities Empowered</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <form action="#">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Verdantic. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
-            </ul>
-        </div>
-    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
