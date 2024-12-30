@@ -1,11 +1,22 @@
 /* General Styles */
+
 body {
-  margin: 0;
   font-family: 'Inter', sans-serif;
   color: #333;
-  line-height: 1.6;
-  background-color: #f8f9fa;
+  background-color: #fff;
 }
+h1, h2 {
+  color: #006400; /* Verdantic's green theme */
+}
+
+.hero {
+  background-image: url('forest.jpg');
+  background-size: cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
 
 h1, h2, h3 {
   margin: 0;
