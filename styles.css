@@ -1,198 +1,145 @@
+/* General Styles */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    color: #2E2E2E;
+    color: #333;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
 }
 
-/* Header */
-.header {
-    background: #2E8B57;
-    color: #FFFFFF;
-    padding: 10px 0;
+/* Navigation Bar */
+.navbar {
+    background-color: #2E8B57;
+    color: #fff;
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.header .logo {
-    width: 150px;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
-.nav a {
-    color: #FFFFFF;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.nav a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-    background: #E6F4EA;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.hero h1 {
-    color: #2E8B57;
-    font-size: 36px;
-}
-
-.hero .cta-button {
-    background: #50C878;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-}
-
-/* Sections */
-.about, .solutions, .impact, .contact {
-    padding: 50px 20px;
-}
-
-.about-icon {
-    width: 100px;
-    margin: 20px 0;
-}
-
-/* Grid Layouts */
-.values-grid, .solutions-grid, .impact-metrics {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-/* Contact Form */
-.contact form input, .contact form textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-}
-
-.contact form button {
-    background: #50C878;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.footer {
-    background: #2E8B57;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.hero {
-    background-size: cover;
-    background-position: center;
+.nav-links a {
     color: #fff;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.navbar-brand {
-    font-weight: bold;
-}
-
-.btn-light {
-    border-radius: 50px;
-    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('forest.jpg');
-    background-size: cover;
-    background-position: center;
+    background: url('forest.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
+    text-align: center;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero h1 {
     font-size: 48px;
-    font-family: 'Poppins', sans-serif;
-    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 20px;
-    margin-top: 10px;
-    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 20px;
 }
 
-.hero .btn-light {
-    background: #50C878;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 50px;
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.hero .btn-light:hover {
-    background: #3A9D62;
-}
-
-/* Solutions Section */
-.solutions {
-    background-color: #F7F7F7;
-    padding: 50px 20px;
-}
-
-.solution-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    background: #fff;
-}
-
-.solution-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.solution-card h4 {
-    font-size: 20px;
-    color: #2E8B57;
-    margin-bottom: 10px;
-}
-
-.solution-card p {
-    font-size: 16px;
+.hero .btn {
+    background-color: #FFD700;
     color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.hero .btn:hover {
+    background-color: #FFBF00;
+}
+
+/* About Section */
+.about {
+    padding: 50px 0;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background-color: #2E8B57;
+    color: #fff;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
